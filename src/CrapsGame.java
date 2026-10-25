@@ -2,13 +2,15 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class CrapsGame {
+    // Declarations
+    static Scanner in = new Scanner(System.in);
+
     /**
      * Handles user input for simple yes or no.
      * @param userPrompt the userPrompt the user receives.
      * @return the user's validated response
      */
     public static String userYesOrNo(String userPrompt) {
-        Scanner in = new Scanner(System.in);
         String response;
         boolean isValid = false;
 
