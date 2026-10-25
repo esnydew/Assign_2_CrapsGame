@@ -12,8 +12,6 @@ public class CrapsGame {
         String response;
         boolean isValid = false;
 
-        // User instructions.
-
         // Use scanner to receive input and then remove whitespace. Validates input for 'yes' and 'no' cases.
         do {
             System.out.print(userPrompt);
@@ -41,8 +39,6 @@ public class CrapsGame {
         int sum = 0;
         String response;
         boolean isValid = false;
-
-        // Repeat what the point is;
 
         while(true) {
             // Validates only a 'yes' from the user.
