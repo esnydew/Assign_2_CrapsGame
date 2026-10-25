@@ -8,7 +8,7 @@ public class CrapsGame {
 
     /**
      * Handles user input for simple yes or no.
-     * @param userPrompt the userPrompt the user receives.
+     * @param userPrompt the prompt the user receives.
      * @return the user's validated response
      */
     public static String userYesOrNo(String userPrompt) {
