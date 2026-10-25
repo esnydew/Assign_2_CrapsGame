@@ -54,13 +54,13 @@ public class CrapsGame {
                     sum = diceOne + diceTwo;
                     isValid = true;
                 } else {
-                    System.out.print("You must answer with a yes when you are ready!");
+                    System.out.println("You must answer with a yes when you are ready!");
                 }
             } while (!isValid);
             isValid = false;
 
             // Outputs the results and then checks to see if point was met or a 7 was rolled.
-            System.out.printf("The first dice rolled: %d.%nThe second dice rolled: %d.%nYou rolled: %d.%n", diceOne, diceTwo, sum);
+            System.out.printf("The first dice rolled a %d.%nThe second dice rolled a %d.%nYou rolled a %d.%n", diceOne, diceTwo, sum);
             if (sum == point || sum == 7) {
                 return sum;
             } else {
