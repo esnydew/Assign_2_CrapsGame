@@ -4,6 +4,7 @@ import java.util.Random;
 public class CrapsGame {
     // Declare class-level input scanner.
     private static final Scanner in = new Scanner(System.in);
+    private static final Random roller = new Random();
 
     /**
      * Handles user input for simple yes or no.
@@ -35,7 +36,6 @@ public class CrapsGame {
      */
     public static int tryingForPoint(int point) {
         // Declarations
-        Random roller = new Random();
         int diceOne = 0;
         int diceTwo = 0;
         int sum = 0;
@@ -73,7 +73,6 @@ public class CrapsGame {
      */
     public static void main(String[] args){
         // Declarations
-        Random roller = new Random();
         int diceOne;
         int diceTwo;
         int sum;
