@@ -2,8 +2,8 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class CrapsGame {
-    // Declarations
-    static Scanner in = new Scanner(System.in);
+    // Declare class-level input scanner.
+    private static final Scanner in = new Scanner(System.in);
 
     /**
      * Handles user input for simple yes or no.
