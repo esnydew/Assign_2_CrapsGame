@@ -43,7 +43,6 @@ public class CrapsGame {
         boolean isValid = false;
 
         // Repeat what the point is;
-        System.out.printf("%d is the point.%n", point);
 
         while(true) {
             // Validates only a 'yes' from the user.
@@ -64,6 +63,8 @@ public class CrapsGame {
             System.out.printf("The first dice rolled: %d.%nThe second dice rolled: %d.%nYou rolled: %d.%n", diceOne, diceTwo, sum);
             if (sum == point || sum == 7) {
                 return sum;
+            } else {
+                System.out.printf("%d is the point.%n", point);
             }
         }
     }
