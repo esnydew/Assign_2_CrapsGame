@@ -95,7 +95,7 @@ public class CrapsGame {
             diceOne = roller.nextInt(1, 7);
             diceTwo = roller.nextInt(1, 7);
             sum = diceOne + diceTwo;
-            System.out.printf("The first dice rolled: %d.%nThe second dice rolled: %d.%nYou rolled: %d.%n", diceOne, diceTwo, sum);
+            System.out.printf("The first dice rolled a %d.%nThe second dice rolled a %d.%nYou rolled a %d.%n", diceOne, diceTwo, sum);
 
             // Crapping out.
             if (sum == 2 || sum == 3 || sum == 12) {
@@ -108,6 +108,7 @@ public class CrapsGame {
             // Trying for point.
             } else {
                 point = sum;
+                System.out.printf("%d is now the point.%n", point);
                 sum = tryingForPoint(point);
                 if(sum == point) {
                     System.out.printf("You rolled a %d. Your roll hit the point of %d. Point is made! You win!%n", sum, point);
